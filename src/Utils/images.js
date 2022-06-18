@@ -1,4 +1,7 @@
+import leadifyLogo from '../Assets/Images/leadify-svg.svg'
+import leadifyNav from '../Assets/Images/leadify-nav.svg'
+
 export const images ={
-    leadifyLogo: require('../Assets/leadify-svg.svg'),
-    leadifyNav: require('../Assets/leadify-nav.svg'),
+    leadifyLogo,
+    leadifyNav,
 }

@@ -1,0 +1,65 @@
+:root{
+    --white:#ffffff;
+    --black:#000000;
+    --yellow:#ffd926;
+    --orange:#ffba07;
+    --skyblue:#00c3bf;
+    --lightblue:#1b7fbd;
+    --darktblue:'#112f91'
+}
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: 'AnekMalayalam-Bold';
+  src:  url('./Assets/Fonts/AnekMalayalam-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'AnekMalayalam-ExtraBold';
+  src:  url('./Assets/Fonts/AnekMalayalam-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'AnekMalayalam-Light';
+  src:  url('./Assets/Fonts/AnekMalayalam-Light.ttf');
+}
+
+@font-face {
+  font-family: 'AnekMalayalam-Regular';
+  src: url('./Assets/Fonts/AnekMalayalam-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'AnekMalayalam-Medium';
+  src: url('./Assets/Fonts/AnekMalayalam-Medium.ttf');
+}
+
+* {
+  margin: 0px;
+  outline: none;
+  padding: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "AnekMalayalam-Regular" !important;
+}
+
+p,
+ul,
+li,
+td,
+div,
+.p,
+label {
+  font-family: "AnekMalayalam-Light";
+}

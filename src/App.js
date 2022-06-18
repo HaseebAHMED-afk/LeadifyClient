@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import Dashboard from './Views/Dashboard';
 import Register from './Views/Register';
+import './App.css'
 
 const App = () => {
   return (
