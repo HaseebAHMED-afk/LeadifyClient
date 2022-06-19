@@ -1,0 +1,89 @@
+.register-page {
+  height: 94.5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.register-page-section1 {
+  width: 50%;
+  padding: 5%;
+}
+
+.register-page-section2 {
+  width: 50%;
+  background-image: linear-gradient(#ed008c, #fff000);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-page {
+  height: 94.5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.login-page-section1 {
+  width: 50%;
+  padding: 5%;
+}
+
+.login-page-section2 {
+  width: 50%;
+  background-image: linear-gradient(#37D5D6, #36096D);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.or-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+
+.dash{
+    border-top: 1px solid rgb(189, 189, 189);
+    width: 100%;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 426px) {
+  .register-page {
+    align-items: baseline;
+    padding: 20% 0;
+  }
+  .register-page-section2 {
+    display: none;
+    width: 0%;
+    height: 0%;
+  }
+
+  .register-page-section1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-page {
+    align-items: baseline;
+    padding: 20% 0;
+  }
+  .login-page-section2 {
+    display: none;
+    width: 0%;
+    height: 0%;
+  }
+
+  .login-page-section1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

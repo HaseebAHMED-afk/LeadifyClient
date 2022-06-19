@@ -1,4 +1,4 @@
-.roundedButtonSolidYellow{
+.roundedButtonSolid{
     height: 35px;
     width: 100px;
     display: flex;
@@ -6,28 +6,45 @@
     justify-content: center;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
-
-.roundedButtonOutlineYellow{
+.socialBtn{
     height: 35px;
-    width: 100px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
-    background-color: transparent;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+.googleSocialBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px auto;
+}
+.facebookSocialBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px auto;
 }
 
-
-
-
-.btnTextYellow{
+.btnText{
  margin: auto;
  color: white;
 }
 
-.btnTextOutlinedYellow{
-    margin: auto;
- color: rgb(61, 61, 61);
+.socialBtnText{
+    margin: auto 10px;
+    color: black;
 }
