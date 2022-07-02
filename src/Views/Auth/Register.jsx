@@ -9,7 +9,7 @@ import Navbar from "../../Components/Layout/Navbar";
 import { colors } from "../../Utils/colors";
 import { images } from "../../Utils/images";
 import "./Style.css";
-import { UploadOutlined } from "@ant-design/icons";
+import { IdcardOutlined, UploadOutlined  } from "@ant-design/icons";
 import { Button, message, Upload } from "antd";
 import { signInWithFacebook, signInWithGoogle } from "../../firebase";
 
@@ -45,7 +45,7 @@ const Register = () => {
             style={{ width: "20%" }}
           />
           <h1>Register</h1>
-          <TextInput label={"Name"} size="large" />
+          <TextInput label={"Name"} size="large" icon={<IdcardOutlined />} />
           <EmailInput label={"Email"} size="large" />
           <PasswordInput label={"Password"} size={"large"} />
           <p className="label">Profile Picture</p>
