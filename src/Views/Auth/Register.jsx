@@ -48,7 +48,7 @@ const Register = () => {
           <TextInput label={"Name"} size="large" icon={<IdcardOutlined />} />
           <EmailInput label={"Email"} size="large" />
           <PasswordInput label={"Password"} size={"large"} />
-          <p className="label">Profile Picture</p>
+          {/* <p className="label">Profile Picture</p>
           <Button
             size="large"
             style={{ width: "100%" }}
@@ -63,7 +63,7 @@ const Register = () => {
             ref={inputFile}
             style={{ display: "none" }}
             onChange={handleProfilePick}
-          />
+          /> */}
           <RoundedButtonSolid
             btnText={"Register"}
             btnStyle={{
@@ -74,8 +74,8 @@ const Register = () => {
             />
             <div className="dash" />
             <p style={{margin:'auto' , textAlign:'center'}} >or</p>
-            <GoogleSocialBtn btnText={'Register With Google'} onClick={googleRegister} />
-            <FacebookSocialBtn btnText={'Register With Facebook'} onClick={fbRegister} />
+            {/* <GoogleSocialBtn btnText={'Register With Google'} onClick={googleRegister} />
+            <FacebookSocialBtn btnText={'Register With Facebook'} onClick={fbRegister} /> */}
               
 
         </div>

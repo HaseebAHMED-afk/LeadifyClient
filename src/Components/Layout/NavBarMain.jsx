@@ -29,11 +29,11 @@ const NavBarMain = () => {
   return (
     <div className='navbar-main' >
         <div  className='search-section' >
-            <div  onClick={() => dispatch(toggleSearch())} >
+            {/* <div  onClick={() => dispatch(toggleSearch())} >
             <AiOutlineSearch size={'32px'} />
-            </div>
+            </div> */}
             <Dropdown overlay={menu}>
-                <Avatar size={'large'} icon={<UserOutlined />} />
+                <Avatar size={'medium'} icon={<UserOutlined />} />
             </Dropdown>
         </div>
         

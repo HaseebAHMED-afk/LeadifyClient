@@ -36,7 +36,7 @@
 }
 
 .layout-right-section{
-    width: 85%;
+    width: 100%;
 }
 
 @media screen and (max-width:426px) {

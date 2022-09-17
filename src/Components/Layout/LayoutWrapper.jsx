@@ -6,9 +6,9 @@ import './Style.css'
 const LayoutWrapper = ({children}) => {
   return (
     <div style={{display:'flex',flexDirection:'row' , width:'100%'}} >
-        <div className='sidebar-parent' >
+        {/* <div className='sidebar-parent' >
           <Sidebar />
-        </div>
+        </div> */}
         <div className='layout-right-section' >
         <NavBarMain />
         {children}

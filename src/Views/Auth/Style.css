@@ -9,6 +9,22 @@
   width: 50%;
   padding: 5%;
 }
+.addEmployeeHeading1 {
+  width: 50%;
+  padding: 5%;
+  height: 95vh;
+  overflow: scroll;
+}
+
+.addEmployeeHeading1::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.addEmployeeHeading1 {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 .register-page-section2 {
   width: 50%;
@@ -28,6 +44,10 @@
 .login-page-section1 {
   width: 50%;
   padding: 5%;
+}
+
+.addEmployeeHeading{
+  font-size: 30px;
 }
 
 .login-page-section2 {

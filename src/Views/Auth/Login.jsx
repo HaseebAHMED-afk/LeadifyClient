@@ -52,8 +52,8 @@ const Login = () => {
           />
           <div className="dash" />
             <p style={{margin:'auto' , textAlign:'center'}} >or</p>
-            <GoogleSocialBtn btnText={'Log In With Google'} onClick={googleRegister} />
-            <FacebookSocialBtn btnText={'Log In With Facebook'} onClick={fbRegister} />
+            {/* <GoogleSocialBtn btnText={'Log In With Google'} onClick={googleRegister} />
+            <FacebookSocialBtn btnText={'Log In With Facebook'} onClick={fbRegister} /> */}
         </div>
       </div>
     </div>
