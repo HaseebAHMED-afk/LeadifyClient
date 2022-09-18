@@ -50,7 +50,7 @@ export const NumberInput = ({size ,placeholder , showError , onChangeEvent, valu
     return (
       <div className='text-input' >
          <p className="label" >{label}</p>
-         <InputNumber size={size} placeholder={placeholder} value={value} onChange={onChangeEvent}  prefix={icon} status={status} min={1} max={100} style={{width:'100%'}} />
+         <InputNumber size={size} placeholder={placeholder} value={value} onChange={onChangeEvent}  prefix={icon} status={status} min={1} max={100} style={{width:'100%'}} type='number' />
         {
             showError && (
                 <p style={{textAlign:'left',color:'red'}} >{errorMessage}</p>

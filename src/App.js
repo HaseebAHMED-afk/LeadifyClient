@@ -25,7 +25,7 @@ const App = () => {
     <Route path='/employee-login' element={<EmployeeLogin />} />
     <Route path='addEmployee' element={<AddEmployee />} />
     <Route path='dashboard' element={<LayoutWrapper><Dashboard /></LayoutWrapper>} />
-    <Route path='employee-board' element={<LayoutWrapper><EmployeeBoard /></LayoutWrapper>} />
+    <Route path='employee-board/:id' element={<LayoutWrapper><EmployeeBoard /></LayoutWrapper>} />
     <Route path='employees' element={<LayoutWrapper><Employees /></LayoutWrapper>} />
    </Routes>
     <SearchModal isOpen={searchSate} onClose={() => dispatch(toggleSearch())} />

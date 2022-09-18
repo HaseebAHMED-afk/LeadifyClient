@@ -1,11 +1,19 @@
 import React from 'react'
 import { images } from '../../Utils/images'
 import './Style.css'
+import { LoadingOutlined } from '@ant-design/icons';
+import { Spin } from 'antd';
 
-export const RoundedButtonSolid = ({btnText , btnStyle , onClick}) => {
+
+export const RoundedButtonSolid = ({btnText , btnStyle , onClick , loading}) => {
   return (
     <button className='roundedButtonSolid' style={btnStyle} onClick={onClick} >
+      {
+        loading ? (
+          <Spin indicator={<LoadingOutlined style={{ fontSize: 24 }} spin />} />
+        ) :
         <h3 className='btnText' >{btnText}</h3>
+      }
     </button>
   )
 }

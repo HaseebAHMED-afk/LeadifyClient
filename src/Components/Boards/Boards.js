@@ -8,21 +8,7 @@ export const Boards = ({title , data , titleColor }) => {
         <div>
         <h1 className='board-title' style={{color:titleColor}} >{title}</h1>
         <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
-        <TaskCard />
+       
         </div>
     </div>
   )
