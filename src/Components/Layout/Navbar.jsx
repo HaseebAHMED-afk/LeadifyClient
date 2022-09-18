@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className='navbar' >
         <img src={images.leadifyNav} alt="leadify-nav" className='nav-logo' />
         <div style={{display:'flex',flexDirection:'row' , alignItems:'center' , justifyContent:'space-between'}} >
-         <RoundedButtonSolid onClick={()=>navigate('/login')} btnText={'Login'} btnStyle={{backgroundColor: colors.darkblue , marginLeft:5 , marginRight:5}}  />
+         <RoundedButtonSolid onClick={()=>navigate('/')} btnText={'Login'} btnStyle={{backgroundColor: colors.darkblue , marginLeft:5 , marginRight:5}}  />
          <RoundedButtonSolid  onClick={()=>navigate('/register')} btnText={'Register'} btnStyle={{backgroundColor: colors.yellow}}  />
          </div>
     </div>

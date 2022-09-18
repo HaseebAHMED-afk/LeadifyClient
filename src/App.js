@@ -9,6 +9,9 @@ import SearchModal from './Components/Modals/SearchModal';
 import { useSelector , useDispatch } from 'react-redux'
 import { toggleSearch } from './Redux/Reducers/Search';
 import AddEmployee from './Views/Auth/AddEmployee';
+import EmployeeBoard from './Views/Dashboard/EmployeeBoard';
+import Employees from './Views/Dashboard/Employees';
+import EmployeeLogin from './Views/Auth/EmployeeLogin';
 
 
 const App = () => {
@@ -18,9 +21,12 @@ const App = () => {
     <>
    <Routes >
     <Route path='register' element={<Register />} />
-    <Route path='login' element={<Login />} />
+    <Route path='/' element={<Login />} />
+    <Route path='/employee-login' element={<EmployeeLogin />} />
     <Route path='addEmployee' element={<AddEmployee />} />
     <Route path='dashboard' element={<LayoutWrapper><Dashboard /></LayoutWrapper>} />
+    <Route path='employee-board' element={<LayoutWrapper><EmployeeBoard /></LayoutWrapper>} />
+    <Route path='employees' element={<LayoutWrapper><Employees /></LayoutWrapper>} />
    </Routes>
     <SearchModal isOpen={searchSate} onClose={() => dispatch(toggleSearch())} />
    </>

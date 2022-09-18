@@ -11,7 +11,7 @@ import { colors } from "../../Utils/colors";
 import { images } from "../../Utils/images";
 import "./Style.css";
 
-const Login = () => {
+const EmployeeLogin = () => {
 
   const googleRegister = async () =>{
     let res = await signInWithGoogle()
@@ -39,7 +39,7 @@ const Login = () => {
             alt="leadify"
             style={{ width: "20%" }}
           />
-          <h1>Manager Login</h1>
+          <h1>Employee Login</h1>
           <EmailInput label={"Email"} size="large" />
           <PasswordInput label={"Password"} size={"large"} />
           <RoundedButtonSolid
@@ -50,9 +50,9 @@ const Login = () => {
               marginTop: "2%",
             }}
           />
-          <div className="dash" /> 
-            <p style={{margin:'auto' , textAlign:'center'}} >or</p> 
-            <a href="employee-login">Login as Employee?</a>
+      
+      <p style={{margin:'auto' , textAlign:'center'}} >or</p> 
+            <a href="/">Login as Manager?</a>
             {/* <GoogleSocialBtn btnText={'Log In With Google'} onClick={googleRegister} />
             <FacebookSocialBtn btnText={'Log In With Facebook'} onClick={fbRegister} /> */}
         </div>
@@ -61,4 +61,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default EmployeeLogin;

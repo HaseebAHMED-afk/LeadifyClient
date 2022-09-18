@@ -72,8 +72,8 @@ const Register = () => {
               marginTop: "2%",
             }}
             />
-            <div className="dash" />
-            <p style={{margin:'auto' , textAlign:'center'}} >or</p>
+            {/* <div className="dash" />
+            <p style={{margin:'auto' , textAlign:'center'}} >or</p> */}
             {/* <GoogleSocialBtn btnText={'Register With Google'} onClick={googleRegister} />
             <FacebookSocialBtn btnText={'Register With Facebook'} onClick={fbRegister} /> */}
               

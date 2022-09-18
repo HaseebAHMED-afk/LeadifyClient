@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { FacebookSocialBtn, GoogleSocialBtn, RoundedButtonSolid } from "../../Components/Buttons/Buttons";
 import {
   EmailInput,
+  NumberInput,
   PasswordInput,
   TextInput,
 } from "../../Components/Inputs/Inputs";
@@ -23,13 +24,13 @@ const AddEmployee = () => {
         <TextInput label={"Name"} size="large" icon={<IdcardOutlined />} />
         <EmailInput label={"Email"} size="large" />
         <PasswordInput label={"Password"} size={"large"} />
-        <TextInput label={"Years of Experience"} size={"large"} />
-        <TextInput label={"Years Expertise"} size={"large"} />
+        <NumberInput label={"Years of Experience"} size={"large"} />
+        <TextInput label={"Expertise"} size={"large"} />
         <TextInput label={"Gender"} size={"large"} />
-        <TextInput label={"Age"} size={"large"} />
-        <TextInput label={"Technical Assessment"} size={"large"} />
-        <TextInput label={"Intelligence Assessment"} size={"large"} />
-        <TextInput label={"Professional Assessment"} size={"large"} />
+        <NumberInput label={"Age"} size={"large"} />
+        <NumberInput label={"Technical Assessment"} size={"large"} />
+        <NumberInput label={"Intelligence Assessment"} size={"large"} />
+        <NumberInput label={"Professional Assessment"} size={"large"} />
         {/* <p className="label">Profile Picture</p>
         <Button
           size="large"
