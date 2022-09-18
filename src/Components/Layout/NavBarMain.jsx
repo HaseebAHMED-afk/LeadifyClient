@@ -11,7 +11,7 @@ const menu = (
       items={[
         {
           key: '1',
-          label: 'Profile'
+          label: 'Employees'
         },
         {
           key: '2',
@@ -32,7 +32,7 @@ const NavBarMain = () => {
             {/* <div  onClick={() => dispatch(toggleSearch())} >
             <AiOutlineSearch size={'32px'} />
             </div> */}
-            <Dropdown overlay={menu}>
+            <Dropdown overlay={menu} >
                 <Avatar size={'medium'} icon={<UserOutlined />} />
             </Dropdown>
         </div>
