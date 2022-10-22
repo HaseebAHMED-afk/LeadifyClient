@@ -92,7 +92,7 @@ const AddEmployee = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="register-page">
         <div className="addEmployeeHeading1">
           <h1 className="addEmployeeHeading">Add a New Employee</h1>

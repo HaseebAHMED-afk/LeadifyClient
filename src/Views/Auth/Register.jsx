@@ -36,7 +36,7 @@ const Register = () => {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="register-page">
         <div className="register-page-section1">
           <img

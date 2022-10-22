@@ -34,15 +34,23 @@ export const TaskCard = ({data , refreshFn}) => {
 
   return (
     <div className="task-card">
-      <h1 style={{ fontSize: 20 }}>Task Title</h1>
-      <p>Task Para</p>
-      <Tag color="red">red</Tag>
-      <Tag color="orange">orange</Tag>
-      <Tag color="green">green</Tag>
-      <Tag color="cyan">cyan</Tag>
-      <Tag color="geekblue">geekblue</Tag>
+      <h1 style={{ fontSize: 20 }}>{data?.title}</h1>
+      <p>Assigned To: </p>
+      <p>Status</p>
+      {
+        data?.taskStatus == 'queued' ? 
+        <Tag color="purple">QUEUED</Tag> : data?.taskStatus == 'pending' ? 
+        <Tag color="yellow">PENDING</Tag> : 
+        <Tag color="green">COMPLETED</Tag>
+
+      }
+      {/* <Tag color="red">red</Tag> */}
+      {/* <Tag color="green">green</Tag> */}
+      
       <br />
-      <Radio onClick={() => completeTask()} >Mark as Complete</Radio>
+      {data?.taskStatus == 'pending' ? 
+      <a onClick={() => completeTask()} >Mark as Complete</a> : null  
+    }
     </div>
   );
 };

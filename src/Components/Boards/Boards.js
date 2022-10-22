@@ -7,7 +7,11 @@ export const Boards = ({title , data , titleColor }) => {
     <div className='board' >
         <div>
         <h1 className='board-title' style={{color:titleColor}} >{title}</h1>
-        <TaskCard />
+        {
+          data?.map((el,i) => 
+          <TaskCard  data={el} key={i} />
+          )
+        }
        
         </div>
     </div>
