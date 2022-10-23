@@ -76,7 +76,7 @@ const AddEmployee = () => {
       }).then(res => res.json())
       .then(res2 =>{
         if(res2?.status){
-         navigate('/employees')
+        //  navigate('/employees')
           setLoading(false);
         }else{
           toast.error(res2?.message)
@@ -124,8 +124,8 @@ const AddEmployee = () => {
             style={{ width: "100%" }}
             onChange={(e) => setExpertise(e)}
           >
-            <Option value="front-end development">Frontend Development</Option>
-            <Option value="back-end development">Backend Development</Option>
+            <Option value="front-end developer">Frontend Development</Option>
+            <Option value="back-end developer">Backend Development</Option>
             <Option value="tester">Tester</Option>
             <Option value="designer">Designer</Option>
           </Select>

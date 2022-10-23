@@ -16,6 +16,7 @@ const Dashboard = () => {
   let [tasks , setTasks] = useState([])
 
   const [title , setTitle] = useState('')
+  const [loading , setLoading] = useState(false)
 
   const fetchTasks = async () =>{
     fetch(baseURL+'/task/getAllTasks' , {
@@ -41,6 +42,7 @@ useEffect(() =>{
 
 const createTask = () =>{
   if(Required('Title' , title)){
+    setLoading(true)
     fetch(baseURL+'/task/createTask',{
       method:'POST',
       body: JSON.stringify({
@@ -51,10 +53,17 @@ const createTask = () =>{
       })
     }).then(res => res.json())
     .then(res2=>{
-      console.log(res2);
+      if(res2?.status){
+        setLoading(false)
+        fetchTasks()
+      }else{
+        setLoading(false)
+        toast.error(res2?.message)
+      }
     }).
     catch(err => {
-      console.log(err);
+      setLoading(false)
+      toast.error(err)
     })
   }
 }
@@ -76,15 +85,16 @@ const createTask = () =>{
             width: "20%",
           }}
           onClick={createTask}
+          loading={loading}
           />
       </div>
 
       <div className="taskboard" >
           {/* <Boards title={'New'}  titleColor={colors.lightblue} /> */}
-          <Boards title={'Pending'} data={tasks?.filter(el => el?.taskStatus == 'pending')} titleColor={colors.yellow} />
+          <Boards refreshFn={fetchTasks} title={'Pending'} data={tasks?.filter(el => el?.taskStatus == 'pending')} titleColor={colors.yellow} />
           {/* <Boards title={'In Progress'} titleColor={colors.orange} /> */}
-          <Boards title={'Completed'} titleColor={'green'} data={tasks?.filter(el => el?.taskStatus == 'completed')} />
-          <Boards title={'Queued'} titleColor={'purple'} data={tasks?.filter(el => el?.taskStatus == 'queued')} />
+          <Boards refreshFn={fetchTasks} title={'Completed'} titleColor={'green'} data={tasks?.filter(el => el?.taskStatus == 'completed')} />
+          <Boards refreshFn={fetchTasks} title={'Queued'} titleColor={'purple'} data={tasks?.filter(el => el?.taskStatus == 'queued')} />
       </div>
     </div>
   );

@@ -35,7 +35,10 @@ export const TaskCard = ({data , refreshFn}) => {
   return (
     <div className="task-card">
       <h1 style={{ fontSize: 20 }}>{data?.title}</h1>
-      <p>Assigned To: </p>
+      {
+        data?.taskStatus == 'queued' ? null :
+      <p>Assigned To: {data?.assignedTo?.name} </p>
+      }
       <p>Status</p>
       {
         data?.taskStatus == 'queued' ? 
@@ -49,7 +52,7 @@ export const TaskCard = ({data , refreshFn}) => {
       
       <br />
       {data?.taskStatus == 'pending' ? 
-      <a onClick={() => completeTask()} >Mark as Complete</a> : null  
+      <a onClick={() => completeTask(data?._id)} >Mark as Complete</a> : null  
     }
     </div>
   );
